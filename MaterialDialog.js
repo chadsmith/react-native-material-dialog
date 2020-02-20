@@ -11,8 +11,9 @@ import {
   View,
   Dimensions,
 } from 'react-native';
-import colors from './colors';
 import { material } from 'react-native-typography';
+
+import colors from './colors';
 
 const { height } = Dimensions.get('window');
 

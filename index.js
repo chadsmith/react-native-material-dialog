@@ -1,11 +1,4 @@
-import MaterialDialog from './src/MaterialDialog';
-import MultiPickerMaterialDialog from './src/MultiPickerMaterialDialog';
-import SinglePickerMaterialDialog from './src/SinglePickerMaterialDialog';
-
-const Dialogs = {
-  MaterialDialog,
-  MultiPickerMaterialDialog,
-  SinglePickerMaterialDialog,
-};
-
-module.exports = Dialogs;
+export {default as connectDialog} from './connectDialog';
+export {default as DialogProvider} from './DialogProvider';
+export {default as MaterialDialog} from './MaterialDialog';
+export {useDialog} from './context';
