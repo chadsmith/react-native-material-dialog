@@ -11,8 +11,9 @@ export default class DialogProvider extends React.Component {
 
   getContext = () => ({
     alert: (title, text, options) => {
-      this._dialogRef.current !== null &&
-        this._dialogRef.current.alert(title, text, options);
+      if (this._dialogRef.current !== null) {
+        return this._dialogRef.current.alert(title, text, options);
+      }
     },
   });
 
